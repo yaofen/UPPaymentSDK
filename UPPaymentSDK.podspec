@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UPPaymentSDK"
-  s.iversion      = "0.0.3"
+  s.iversion      = "0.0.4"
   s.summary      = "银联手机控件支付iOS SDK"
   s.description  = <<-DESC
     具体更新内容查看银联官方说明文档
