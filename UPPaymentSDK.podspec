@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/yaofen"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "yaofen" => "2363253102@qq.com" }
 
   s.ios.deployment_target    = '10.0'
@@ -17,5 +18,10 @@ Pod::Spec.new do |s|
   s.source_files = 'Headers/*.h'
   s.ios.vendored_libraries = 'lib/libPaymentControl.a'
 
+  s.ios.deployment_target = '10.0'
+  s.libraries = 'z'
+  s.frameworks = 'CFNetwork','SystemConfiguration','CoreTelephony'
+  s.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lc++']}
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
 end
